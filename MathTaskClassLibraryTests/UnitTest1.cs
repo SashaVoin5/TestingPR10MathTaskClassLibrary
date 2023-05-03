@@ -8,15 +8,16 @@ namespace MathTaskClassLibraryTests
     public class GeometryTests
     {
         [TestMethod]
-        public void CilinderUnitTest()
+        public void Discriminant()
         {
-            double a = 3;
-            double b = 5;
-            double expected = 141.37;
+            int a = 3;
+            int b = 5;
+            int c = 2;
+            double expected = 1;
 
 
             Geometry g = new Geometry();
-            double actual =  g.Cilinder(a, b);
+            double actual =  g.Disckiriminant(a, b,c);
 
             Assert.AreEqual(expected, actual);
         }
